@@ -1,0 +1,17 @@
+{
+  "name": "folding-text-width-calculator",
+  "version": "0.1.0",
+  "description": "Measures the rendered column width of Unicode strings accounting for East Asian wide and combining characters.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
