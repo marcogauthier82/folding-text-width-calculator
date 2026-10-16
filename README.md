@@ -31,3 +31,10 @@ A lone combining mark with no preceding base starts its own cluster and contribu
 - `charWidth(code: number): number` — width of a single code point (0, 1, or 2). Exposed for callers building their own segmentation.
 
 Both are named exports of the package root.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
